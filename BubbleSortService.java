@@ -19,4 +19,11 @@ public class BubbleSortService extends SortService {
         }
         after = System.nanoTime();
     }
+
+    public long getBefore( ){
+        return this.before;
+    }
+    public long getAfter() {
+        return this.after;
+    }
 }

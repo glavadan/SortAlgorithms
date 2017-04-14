@@ -34,16 +34,23 @@ public class Main {
                 System.out.println(bu.getTimeForSort());
                 for( int i=0; i<items.length; i++){
                     System.out.print(items[i]+" ");
-
                 }
                 break;
             case 2 : SortService in = new InsertionSortService();
+                in.sort(items);
                 System.out.println("Insertion");
                 System.out.println(in.getTimeForSort());
                 for ( int i=0; i<items.length; i++){
                     System.out.print(items[i]+" ");
                 }
                 break;
+            case 3 : SortService me = new MergeSortService();
+                me.sort(items);
+                System.out.println("Merge");
+                System.out.println(me.getTimeForSort());
+                for (int i=0; i<items.length; i++){
+                    System.out.print(items[i]+" ");
+                }
             default: break;
         }
 

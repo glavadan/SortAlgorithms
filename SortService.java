@@ -8,12 +8,12 @@ public abstract class SortService {
     long before;
     long after;
     private long timeResult;
-    int size;
 
 
-    public void sort(int[] items){};
+
+    public void sort(int[] items){}
     public long getTimeForSort(){
         return timeResult = after - before;
-    };
-    public void getLastArraySize(){};
+    }
+    public void getLastArraySize(){}
 }
